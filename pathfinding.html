@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./pathfinding.css">
+    <title>Pathfinding Algorithms</title>
+</head>
+<body oncontextmenu="return false">
+    <h1>PATHFINDING</h1>
+
+    <div id="div_controls" class="controls">
+        <h2>Controls</h2>
+        <p>Enter - Execute algorithm</p>
+        <p>1 - Draw walls</p>
+        <p>2 - Remove</p>
+        <p>3 - Set starting point</p>
+        <p>4 - Set ending point</p>
+        <p>W - Randomly place walls</p>
+        <p>C - Clear grid</p>
+        <p>F1 - Breadth-first algorithm</p>
+        <p>F2 - Best-first algorithm</p>
+        <p>-/+ - Change algorithm speed</p>
+        <button id="btn_closeControls">Close</button>
+    </div>
+
+    <div class="options_container">
+        <div class="slider_container">
+            <label for="slider_speed">Speed</label>
+            <input type="range" id="slider_speed" min="1" max="10" value="5">
+
+            <label for="slider_wall">Wall Density</label>
+            <input type="range" id="slider_wall" min="1" max="10" value="5">
+        </div>
+
+        <div class="algorithms_container">
+            <h2>Algorithm</h2>
+            <div id="breadth_container">
+                <input type="radio" name="type" id="radio_breadth" checked="checked">
+                <label for="radio_breadth">Breadth-first</label>
+            </div>
+
+            <div id="best_container">
+                <input type="radio" name="type" id="radio_best">
+                <label for="radio_best">Best-first</label>
+            </div>
+
+            <div id="astar_container">
+                <input type="radio" name="type" id="radio_astar" disabled="true">
+                <label for="radio_astar">A*</label>
+            </div>
+        </div>
+
+        <button id="btn_openControls">Controls</button>
+    </div>
+
+    <div class="canvas_container">
+        <canvas id="canvas"></canvas>
+    </div>
+    <script src="./pathfinding.js"></script>
+</body>
+</html>

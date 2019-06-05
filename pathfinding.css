@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css?family=Monoton');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100');
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    user-select: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+input, button{
+    cursor: pointer;
+}
+
+h1{
+    margin: 0;
+    text-align: center;
+    font-family: 'Monoton', cursive;
+    letter-spacing: 0.3rem;
+    font-weight: 100;
+    font-size: 7vw;
+}
+
+/* Options */
+
+.options_container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 4.5rem;
+    width: 30%;
+    height: 100%;
+    background: rgba(0,0,0,0.2);
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.5rem;
+    overflow: auto;
+}
+
+/* Controls button */
+.options_container button{
+    border: 0;
+    border-radius: 5px;
+    padding: 0.75rem;
+    font-size: 0.9vw;
+    background: white;
+    transition: background-color 0.15s ease-in;
+}
+
+.options_container button:hover{
+    background: rgb(231, 231, 231);
+}
+
+.slider_container{
+    display: flex;
+    flex-direction: column;
+}
+
+.slider_container label{
+    text-align: center;
+}
+
+#slider_speed{
+    margin-bottom: 1rem;
+}
+
+.algorithms_container{
+    display: flex;
+    flex-direction: column;
+}
+
+.algorithms_container h2{
+    margin: 0;
+    margin-bottom: 0.75rem;
+    text-align: center;
+    font-size: 1.75vw;
+}
+
+#breadth_container, #best_container{
+    margin-bottom: 0.5rem;
+}
+
+#astar_container{
+    display: none;
+}
+
+/* Options - END */
+
+/* Controls */
+.controls{
+    display: none;
+    background: rgba(0, 0, 0, 0.816);
+    position: absolute;
+    width: 50%;
+    left: 25%;
+    top: 25%;
+    height: 50vh;
+    z-index: 1;
+    border-radius: 5px;
+    overflow: auto;
+}
+
+.controls h2{
+    text-align: center;
+    font-size: 4vw;
+    margin-top: 0;
+    top: 0;
+    color: rgb(192, 192, 192);
+}
+
+.controls p{
+    margin-left: 1rem;
+    font-size: 2.2vw;
+    color: rgb(192, 192, 192);
+}
+
+.controls button{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 0.75em;
+    border-radius: 5px;
+    position: absolute;
+    width: 20%;
+    left: 40%;
+    font-size: 1.4vw;
+    background: white;
+    transition: background-color 0.15s ease-in;
+}
+
+.controls button:hover{
+    background: rgb(211, 211, 211);
+}
+
+/* Controls end */
+
+.canvas_container{
+    position: relative;
+    cursor: pointer;
+    margin-top: 1.5rem;
+    text-align: center;
+}
